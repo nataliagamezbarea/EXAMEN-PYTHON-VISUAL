@@ -33,5 +33,5 @@ function SendFormGoogleSheets() {
   }
 
   SendFormGoogleAppsScript(); // Envía el formulario si el correo es válido
-  window.location.href = "nataliagamezbarea.github.io/EXAMEN-PYTHON-VISUAL/4-App_empresarial/3-Formulario_general";
+  "window.location.href = "3-Formulario_general.html";
 }
