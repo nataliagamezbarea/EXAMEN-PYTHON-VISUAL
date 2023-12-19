@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario con Botón Siguiente</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .form-section {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<form id="formulario-pago">
+    <div class="form-section" id="section1">
+      <h2>Formulario - Paso 1</h2>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="Email" class="form-control" title="Ingrese solo letras en mayúscula" required>
+      <button type="button" onclick="validarCorreo()">Siguiente</button>
+    </div>
+    <div class="form-section" id="section2">
+      <h2>Formulario - Paso 2</h2>
+      <div class="form-group">
+        <label>Apodo:</label>
+        <input type="text" name="Apodo" class="form-control" title="Ingrese solo letras en mayúscula" required>
+      </div>
+
+      <div class="form-group">
+        <label>Lugar favorito:</label>
+        <input type="text" name="Lugar" class="form-control" title="Por favor ingresa solo números">
+      </div>
+
+      <div class="form-group">
+        <label>Famoso Favorito:</label>
+        <input type="text" name="Famoso" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label>Canción Favorita:</label>
+        <input type="text" name="Canción" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Frase descriptiva:</label>
+        <input type="text" name="Frase descriptiva" class="form-control" required>
+      </div>
+
+      <button type="button" onclick="mostrarAnterior()">Anterior</button>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/insertardatos.js"></script>
+<script>
+  formularios[indiceActual].classList.add('show');
+</script>
+
+</body>
+</html>
